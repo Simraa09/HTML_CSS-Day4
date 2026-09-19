@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lesson 10</title>
+    <style>
+        span{
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 8px;
+        }
+
+        .cat{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+            padding-bottom: 8px;
+        }
+
+        .name{
+            font-weight: bolder;
+            font-size: 18px;
+        }
+
+        .dp{
+            width: 30px;
+            vertical-align: middle;
+            margin-left: 10px;
+            border-radius: 40px;
+            margin-right: 0px;
+            margin-top: 5px;
+            margin-bottom: 25px;
+        }
+
+        .text{
+            color: gray;
+            font-size: 15px;
+            margin-bottom: 20px;
+            margin-left: 0px;
+        }
+
+        .tweet{
+            background-color: rgb(19, 175, 236);
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            border-radius: 4px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-left: 8px;
+        }
+
+        .box{
+            border: solid;
+            border-radius: 4px;
+            border-width: 2px;
+            width: 200px;
+            padding-bottom: 18px;
+            border-color: rgb(226, 225, 225);
+            margin-right: 10px;
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .second-grid{
+            display: grid;
+            grid-template-columns: 45px 1fr;
+            align-items: center; 
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box">
+            <div>
+                <img class="cat" src="cat.png">
+            </div>
+            <div>
+                <span class="name"> Oliver </span>
+            </div>
+            <div class="second-grid">
+                <img class="dp" src="cat.png">
+                <span class="text"> 2 mutual friends </span>
+            </div>
+            <div>
+                <span class="tweet"> Add Friend </span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div>
+                <img class="cat" src="cat2.png">
+            </div>
+            <div>
+                <span class="name"> Mimi </span>
+            </div>
+            <div class="second-grid">
+                <img class="dp" src="cat2.png">
+                <span class="text"> 3 mutual friends </span>
+            </div>
+            <div>
+                <span class="tweet"> Add Friend </span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div>
+                <img class="cat" src="cat3.png">
+            </div>
+            <div>
+                <span class="name"> Fluffy </span>
+            </div>
+            <div class="second-grid">
+                <img class="dp" src="cat3.png">
+                <span class="text"> 4 mutual friends </span>
+            </div>
+            <div>
+                <span class="tweet"> Add Friend </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
